@@ -1,8 +1,10 @@
 import { Footer, Navbar } from '../components';
 import { About, Explore, Feedback, GetStarted, Hero, Insights, WhatsNew, World } from '../sections';
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 
-const Home = () => (
-  <div className="bg-primary-black overflow-hidden">
+export default function Home() {
+  return (
+    <div className="bg-primary-black overflow-hidden">
     <Navbar />
     <Hero />
     <div className="relative">
@@ -23,6 +25,5 @@ const Home = () => (
     </div>
     <Footer />
   </div>
-);
-
-export default Home;
+  )
+}
