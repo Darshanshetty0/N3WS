@@ -1,62 +1,39 @@
 'use client';
 
-import { motion } from 'framer-motion';
+
 
 import styles from '../styles';
 import { fadeIn, staggerContainer, zoomIn } from '../utils/motion';
 
 const Feedback = () => (
   <section className={`${styles.paddings}`}>
-    <motion.div
-      variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-6`}
-    >
-      <motion.div
-        variants={fadeIn('right', 'tween', 0.2, 1)}
-        className="flex-[0.5] lg:max-w-[370px] flex justify-end flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#6A6A6A] relative"
-      >
-        <div className="feedback-gradient" />
-        <div>
-          <h4 className="font-bold sm:text-[32px] text-[26px] sm:leading-[40.32px] leading-[36.32px] text-white">
-            Samantha
-          </h4>
-          <p className="mt-[8px] font-normal sm:text-[18px] text-[12px] sm:leading-[22.68px] leading-[16.68px] text-white">
-            Founder Metaverus
-          </p>
+    <div className='columns-2 lg:max-h-[1070px] flex-row sm:p-0 p-0 rounded-[32px] border-[1px] border-[#6A6A6A] relative'>
+      <div className='order-0'>
+        <img src="/planet-09.png" alt="planet" className='object-contain'/>
+      </div>
+      <div className='flex-row order-1 top-10'>
+        <div className='text-4xl	text-white font-serif top-10'>
+          Law sevice in the Chinese Embassy makes new riding
         </div>
-
-        <p className="mt-[24px] font-normal sm:text-[24px] text-[18px] sm:leading-[45.6px] leading-[39.6px] text-white">
-          “With the development of today's technology, metaverse is very
-          useful for today's work, or can be called web 3.0. by using
-          metaverse you can use it as anything”
-        </p>
-      </motion.div>
-
-      <motion.div
-        variants={fadeIn('left', 'tween', 0.2, 1)}
-        className="relative flex-1 flex justify-center items-center"
-      >
-        <img
-          src="/planet-09.png"
-          alt="planet-09"
-          className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]"
-        />
-
-        <motion.div
-          variants={zoomIn(0.4, 1)}
-          className="lg:block hidden absolute -left-[10%] top-[3%]"
-        >
-          <img
-            src="/stamp.png"
-            alt="stamp"
-            className="w-[155px] h-[155px] object-contain"
-          />
-        </motion.div>
-      </motion.div>
-    </motion.div>
+        <br></br>
+        <div className='text-lg	text-white font-serif top-10'>
+          By: Founderguru
+        </div>
+        <br></br>
+        <div className='text-xl	text-white font-sans top-10'>
+          Under the law, service providers get to set a price per meter, but retailers can give away 
+          or give a discount if they have a "trading margin." The law also limits the value of the 
+          market basket, or the available supply of electrical appliances, to set pricing by the retailer.
+          If you are calling overseas from Hong Kong, only the local operator may call you. You must also 
+          switch off your phone if you are placing calls in mainland China or Macau from the airport.
+          The consumer watchdog can ban third parties and external mobile network providers from. 
+          Under the law, service providers get to set a price per meter, but retailers can give away or 
+          give a discount if they have a "trading margin." The law also limits the value of the market 
+          basket, or the available supply of electrical appliances, to set pricing by the retailer. If 
+          you are calling overseas from Hong...(Read More)
+        </div>
+      </div>
+    </div>
   </section>
 );
 
