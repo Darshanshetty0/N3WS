@@ -22,7 +22,8 @@
     "react-dom": "18.2.0",
     "react-markdown": "^8.0.4",
     "react-syntax-highlighter": "^15.5.0",
-    "wagmi": "^0.8.9"
+    "wagmi": "^0.8.9",
+    "web3.storage": "^4.4.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
